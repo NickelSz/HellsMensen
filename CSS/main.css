@@ -5,7 +5,34 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #FDA97C;
 }
+#app-calendar{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: greenyellow;
+}
 
+.day {
+    border-bottom:1px solid green;
+    border-right: 1px solid darkblue;
+    text-align: center;
+    padding-top: 5px;
+    font-size:12px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+
+}
+.name{
+    padding-bottom:5x;
+}
+.weekend {
+    color: lightblue;
+}
+
+.selected {
+    background-color: lightblue;
+    color: white;
+}
 p, blockquote {
     font-size: .9em;
     line-height: 1.6em;
