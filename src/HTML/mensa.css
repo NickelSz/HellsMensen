@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+* {
+    background-color: #FDA97C;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+
+  .main-box {
+    align-items: center;
+    float: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20%;
+}
+.object-fit { 
+	width: 50px; 
+	height: 50px; 
+  margin-top: 0%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.center-frame { 
+  width: 350px;
+  height: 150px;
+  overflow: hidden
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.wild-frame {
+  background: url(images/Selbst_gemachtes_Eis.jpg) no-repeat center; 
+  width:100%;
+  height: 100%
+}
+.object-fit img { 
+	object-fit: cover; 
+	width: 100%; 
+	height: 100%;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.box{
+  border: 1px solid #3E3A44;
+  margin: 0;
+}
+#standortinfo {
+  float: left;
+ margin-left: 0%;
+  
+}
+#gotoinfo {
+  border-bottom: 1px solid #3E3A44 ;
+}
+  .mdc-bottom-navigation {
+    height: 56px;
+    background-color: #DE575C;
+  }
+  .mdc-bottom-navigation-list {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #DE575C;
+  }
+  .mdc-bottom-navigation-list-item {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 12px;
+    min-width: 60px;
+    max-width: 168px;
+    background-color: #DE575C;
+    user-select: none;
+  }
+  .mdc-bottom-navigation-list-item-text {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+    background-color: #DE575C;
+    color: white;
+  }
+  .mdc-bottom-navigation
+    .mdc-bottom-navigation-list-item
+    .mdc-bottom-navigation-list-item-icon {
+    padding-top: 8px;
+  }
+  .mdc-bottom-navigation-list-item-icon {
+    color: white;
+    background-color:#DE575C;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 8;
+  }
+  
+  .top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+  }
+  
+  .mdc-top-navigation {
+    height: 56px;
+    background-color: #DE575C;
+  }
+
+
+  
+  .mdc-top-navigation-list {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color:#DE575C;
+    border-top: 1px solid #3E3A44 ;
+  }
+
+
+  .mdc-top-navigation-list-item-menu-container {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    background-color:#DE575C;
+  }
+
+  .mdc-top-navigation-list-item-title-container {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    background-color:#DE575C;
+    min-width: 200px;
+  }
+
+  .infobeschreibung {
+    flex: 1 1 0;
+    display: flex;
+    margin-left: 5%;
+    justify-content: left;
+    background-color: #DE575C;
+    min-width: 200px;
+    font-size: 22px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #hintergrund{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand{
+    margin-right: 5%;
+  }
+  #hintergrund2{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand2{
+    margin-right: 5%;
+  }
+  #hintergrund3{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand3{
+    margin-right: 5%;
+  }
+  #hintergrund4{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand4{
+    margin-right: 5%;
+  }
+  #hintergrund5{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand5{
+    margin-right: 5%;
+  }
+  #hintergrund6{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand6{
+    margin-right: 5%;
+  }
+  #hintergrund7{
+    background-color: #DE575C;
+  }
+  #iconinfoabstand7{
+    margin-right: 5%;
+  }
+  .mdc-top-navigation-list-item-back-container {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    background-color: #DE575C;
+  }
+  
+  .mdc-top-navigation-list-item-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    background-color: #DE575C;
+    font-size: 28px;
+  }
+  
+  .mdc-top-navigation-list-item-menu {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #ffffff;
+    background-color:#DE575C;
+  }
+  
+  .mdc-top-navigation-list-item-back {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #DE575C;
+  }
