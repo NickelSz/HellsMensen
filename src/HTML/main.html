@@ -13,28 +13,62 @@
     <link rel="stylesheet" href="mensa.css" />
   </head>
   <body> 
-      
+    
    
 
     <!-- Menü Oben-->
     <div class="top-bar">
       <div class="mdc-top-navigation">
-        <nav class="mdc-top-navigation-list">
+        <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
             <span class="mdc-top-navigation-list-item-title"
               >Hells Mensen
+            </span>
+            <span class= "logooben">
+                <img src="images/HellsLogo_Groß.png" alt="" height="50" width="50">
             </span>
           </span>
         </nav>
       </div>
     </div>
  <!-- Inhalt-->
- <div class="main-box">
-     <div class="main_setup">
-    <div class="object-fit">
-        <img src="images/HellsLogo_Groß.png" width="720" height="347" alt="…">
-        <div class="center-frame">
-            <div class="wild-frame"></div>
+ <div class="wrapper">
+  <div class="one">
+    <img src="images/Selbst_gemachtes_Eis.jpg" id=eis alt="">
+    hier drüber ein aktueller artikel rein
+  </div>
+  <div class="two">
+
+    <nav>
+      <h2>Ausgewählte Mensa</h2>
+       <input id="toggle" type="checkbox" checked>
+    <ul>
+      <li><a href="#">Mensa 1</a></li>
+      <li><a href="#">Mensa 2</a></li>
+      <li><a href="#">Mensa 3</a></li>
+      <li><a href="#">Mensa 4</a></li>
+    </ul>
+ </nav>
+  </div>
+  <div class="three">
+    <div class="date-picker">
+      <div class="selected-date"></div>
+  
+      <div class="dates">
+        <div class="month">
+          <div class="arrows prev-mth">&lt;</div>
+          <div class="mth"></div>
+          <div class="arrows next-mth">&gt;</div>
+        </div>
+  
+        <div class="days"></div>
+      </div>
+    </div>
+  </div>
+  <div class="four">Four</div>
+  <div class="five">Five</div>
+  <div class="six">Six</div>
+</div>
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
                 <div class="dropdown-content">
@@ -43,10 +77,6 @@
                   <a href="#">Mensa3</a>
                 </div>
               </div>
-          </div>
-    </div>
-</div>
- </div>
     <!-- Menü Unten-->
     <div class="bottom-nav">
       <div class="mdc-bottom-navigation">
@@ -95,5 +125,7 @@
         </nav>
       </div>
     </div>
+    <script src="datepicker.js"></script>
   </body>
+ 
 </html>

@@ -4,8 +4,11 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    
   }
-
+/*body{
+  background-image: linear-gradient(15deg,#FDA97C 0%, #DE575C 100%);	
+}*/
   .main-box {
     align-items: center;
     float: inherit;
@@ -13,77 +16,132 @@
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 20%;
+   
 }
-.object-fit { 
-	width: 50px; 
-	height: 50px; 
-  margin-top: 0%;
-  margin-right: 5%;
-  margin-left: 5%;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20%;
+    
+}
+.one {
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+}
+#eis{
+  width: 100%;
+  height: 60%;
+}
+.two { 
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+.three {
+  grid-column: 1/ 4;
+  grid-row: 3 / 4;
+  border: solid 2px black;
 }
 
-.center-frame { 
-  width: 350px;
-  height: 150px;
-  overflow: hidden
-  margin-right: 5%;
-  margin-left: 5%;
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	height: 60px;
+	background-color: #FFF;
+	margin: 30px auto;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+	cursor: pointer;
+	user-select: none;
 }
-.wild-frame {
-  background: url(images/Selbst_gemachtes_Eis.jpg) no-repeat center; 
-  width:100%;
-  height: 100%
+
+.date-picker:hover {
+	background-color: #F3F3F3;
 }
-.object-fit img { 
-	object-fit: cover; 
-	width: 100%; 
+
+.date-picker .selected-date {
+	width: 100%;
 	height: 100%;
-}
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #313131;
+	font-size: 28px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	background-color: #FFF;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.date-picker .dates.active {
+	display: block;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #EEE;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 20px;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.date-picker .dates .month .arrows:hover {
+	background-color: #F3F3F3;
 }
+
+.date-picker .dates .month .arrows:active {
+	background-color: #00CA85;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+}
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+}
+.date-picker .dates .days .day.selected {
+	background-color: #00CA85;
+}
+.four {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+.five {
+  grid-column: 1/4;
+  grid-row: 5/6;
+}
+.six {
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
 .box{
   border: 1px solid #3E3A44;
   margin: 0;
@@ -91,7 +149,97 @@
 #standortinfo {
   float: left;
  margin-left: 0%;
+}
+ nav {
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  width: 50vw;
+  min-width: 320px;
+  height: 200px;
+ }
+
+nav h2 {
+  border-radius: 2px;
+  position: relative;
+  background: tomato;
+  height: 40px;
+  text-transform: uppercase;
+  color: ivory;
+  font-weight: 200;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0,0,0,.35);
+  transition: all .4s;
+}
+
+nav:hover h2{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 5px -1px rgba(0,0,0,.35);
+ }
+nav:hover:active h2{
+  transform: translateY(10px);
+  box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
+ }
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+#toggle:checked ~ul {
+  height: 0%;
+}
+
+nav ul {
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  margin-bottom: 22px;
+  text-align: center;
+  transition: all .4s ease-out;
+  height: 100%;
   
+}
+nav ul li {
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 5px;
+  background: tomato;
+  transition: background 3s;
+  box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+}
+
+nav ul li:hover {
+  background: mediumorchid;
+  transition: background .45s;
+}
+
+nav ul a {
+  display: block;
+  color: ivory;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: none;
+  transition: color .3s;
+}
 }
 #gotoinfo {
   border-bottom: 1px solid #3E3A44 ;
@@ -152,7 +300,7 @@
   
   .mdc-top-navigation {
     height: 56px;
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
 
 
@@ -162,32 +310,45 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color:#DE575C;
+    background-color:#FDA97C;
     border-top: 1px solid #3E3A44 ;
+  }
+  .mdc-top-navigation-list-less{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color:#FDA97C;
   }
 
 
   .mdc-top-navigation-list-item-menu-container {
     flex: 1 1 0;
     display: flex;
-    justify-content: center;
-    background-color:#DE575C;
+    justify-content: left;
+    background-color:#FDA97C;
   }
 
   .mdc-top-navigation-list-item-title-container {
     flex: 1 1 0;
     display: flex;
-    justify-content: center;
-    background-color:#DE575C;
+    justify-content: left;
+    background-color:#FDA97C;
     min-width: 200px;
+    margin-left: 10px;
+    
   }
-
+  .logooben{
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: 8px;
+  }
   .infobeschreibung {
     flex: 1 1 0;
     display: flex;
     margin-left: 5%;
     justify-content: left;
-    background-color: #DE575C;
+    background-color: #FDA97C;
     min-width: 200px;
     font-size: 22px;
     color: white;
@@ -195,43 +356,43 @@
     margin-bottom: auto;
   }
   #hintergrund{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand{
     margin-right: 5%;
   }
   #hintergrund2{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand2{
     margin-right: 5%;
   }
   #hintergrund3{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand3{
     margin-right: 5%;
   }
   #hintergrund4{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand4{
     margin-right: 5%;
   }
   #hintergrund5{
-    background-color: #DE575C;
+    background-color:#FDA97C;
   }
   #iconinfoabstand5{
     margin-right: 5%;
   }
   #hintergrund6{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand6{
     margin-right: 5%;
   }
   #hintergrund7{
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
   #iconinfoabstand7{
     margin-right: 5%;
@@ -239,15 +400,16 @@
   .mdc-top-navigation-list-item-back-container {
     flex: 1 1 0;
     display: flex;
-    justify-content: center;
-    background-color: #DE575C;
+    justify-content: left;
+    background-color: #FDA97C;
+    margin-top: 10px;
   }
   
   .mdc-top-navigation-list-item-title {
-    margin-top: auto;
+    margin-top: 17px;
     margin-bottom: auto;
-    
-    background-color: #DE575C;
+    justify-content: left;
+    background-color: #FDA97C;
     font-size: 28px;
   }
   
@@ -255,7 +417,8 @@
     padding-top: 16px;
     padding-bottom: 16px;
     color: #ffffff;
-    background-color:#DE575C;
+    background-color:#FDA97C;
+    justify-content: left;
   }
   
   .mdc-top-navigation-list-item-back {
@@ -263,5 +426,5 @@
     margin-bottom: auto;
     font-size: 32px;
     color: #ffffff;
-    background-color: #DE575C;
+    background-color: #FDA97C;
   }
