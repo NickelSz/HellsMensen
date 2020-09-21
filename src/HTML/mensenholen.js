@@ -26,6 +26,8 @@ const mensen = fetch("https://openmensa.org/api/v2/canteens/")
       newMensenOption.setAttribute("class", "mensen-option");
       newMensenOption.innerText = alle_mensen[x];
       mensen_liste.appendChild(newMensenOption);
+
+      
     }
   });
 
@@ -33,7 +35,6 @@ const takeday = document.getElementById("takeday");
 const table = document.getElementById("meal");
 
 mensen_liste.onchange = function () {
-  //var date= takeday.data-value;
   var id = mensen_liste.value;
   var date = new Date(selected_date_element.dataset.value);
   var day = date.getDate();
@@ -71,7 +72,6 @@ mensen_liste.onchange = function () {
         newentry.appendChild(preis);
 
         if ( food[count].category == "Wahlmenü (Komponente ohne Fleisch)"){
-          //  <img src="images/Selbst_gemachtes_Eis.jpg" id=eis alt=""></img>
           var vegi = document.createElement("img");
           vegi.setAttribute("src", "images/cake-black-18dp.svg");
           vegi.setAttribute("id", "vegilogo");
