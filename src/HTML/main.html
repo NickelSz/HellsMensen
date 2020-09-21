@@ -12,10 +12,7 @@
     />
     <link rel="stylesheet" href="mensa.css" />
   </head>
-  <body> 
-    
-   
-
+  <body>
     <!-- Menü Oben-->
     <div class="top-bar">
       <div class="mdc-top-navigation">
@@ -24,63 +21,50 @@
             <span class="mdc-top-navigation-list-item-title"
               >Hells Mensen
             </span>
-            <span class= "logooben">
-                <img src="images/HellsLogo_Groß.png" alt="" height="50" width="50">
+            <span class="logooben">
+              <img
+                src="images/HellsLogo_Groß.png"
+                alt=""
+                height="50"
+                width="50"
+              />
             </span>
           </span>
         </nav>
       </div>
     </div>
- <!-- Inhalt-->
- <div class="wrapper">
-  <div class="one">
-    <img src="images/Selbst_gemachtes_Eis.jpg" id=eis alt="">
-    hier drüber ein aktueller artikel rein
-  </div>
-  <div class="two">
-    <nav class= "mensenmenue">
-      
-        
-      <select id="mensen_liste" class="select-css">
-        <option >Mensa</option>
-    </select>
- </nav>
-  </div>
-</div>
-
-  <div class="three">
-    <div class="date-picker">
-      <div class="selected-date"></div>
-  
-      <div class="dates">
-        <div class="month">
-          <div class="arrows prev-mth">&lt;</div>
-          <div class="mth"></div>
-          <div class="arrows next-mth">&gt;</div>
+    <!-- Inhalt-->
+    <div class="wrapper">
+      <div class="one">
+        <img src="images/Selbst_gemachtes_Eis.jpg" id="eis" alt="" />
+        hier drüber ein aktueller artikel rein
+      </div>
+      <div class="two">
+        <div class="dropdown-container">
+          <select id="mensen_liste" class="select-css">
+            <option>Mensa</option>
+          </select>
         </div>
-  
-        <div class="days"></div>
+      </div>
+      <div class="three">
+        <div class="date-picker">
+          <div class="selected-date" id="takeday"></div>
+
+          <div class="dates">
+            <div class="month">
+              <div class="arrows prev-mth">&lt;</div>
+              <div class="mth"></div>
+              <div class="arrows next-mth">&gt;</div>
+            </div>
+
+            <div class="days"></div>
+          </div>
+        </div>
+      </div>
+      <div class="four">
+        <table id="meal"></table>
       </div>
     </div>
-  </div>
-  <div class="four">Four</div>
-  <div class="five">Five</div>
-  <div class="six">
-    <nav>
-      
-      <h2>Ausgewählte Mensa</h2>
-      
-
-       <input id="toggle" type="checkbox" checked>
-    <ul>
-      <li><a href="#">Mensa 1</a></li>
-      <li><a href="#">Mensa 2</a></li>
-      <li><a href="#">Mensa 3</a></li>
-      <li><a href="#">Mensa 4</a></li>
-    </ul>
- </nav>
-  </div>
-</div>
 
     <!-- Menü Unten-->
     <div class="bottom-nav">
@@ -89,8 +73,7 @@
           <span class="mdc-bottom-navigation-list-item">
             <span class="material-icons mdc-bottom-navigation-list-item-icon"
               >local_dining
-              </span
-            >
+            </span>
             <a href="main.html">
               <span class="mdc-bottom-navigation-list-item-text"
                 >Speiseplan</span
@@ -112,9 +95,7 @@
               >location_on</span
             >
             <a href="indernaehe.html">
-              <span class="mdc-bottom-navigation-list-item-text"
-                >Standort</span
-              >
+              <span class="mdc-bottom-navigation-list-item-text">Standort</span>
             </a>
           </span>
           <span class="mdc-bottom-navigation-list-item">
@@ -133,5 +114,4 @@
     <script src="datepicker.js"></script>
     <script src="mensenholen.js"></script>
   </body>
- 
 </html>
