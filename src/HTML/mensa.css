@@ -311,7 +311,7 @@ nav ul a {
   text-decoration: none;
   transition: color .3s;
 }
-}
+
 #gotoinfo {
   border-bottom: 1px solid #3E3A44 ;
 }
@@ -403,16 +403,17 @@ nav ul a {
   .mdc-top-navigation-list-item-title-container {
     flex: 1 1 0;
     display: flex;
-    justify-content: left;
     background-color:#FDA97C;
     min-width: 200px;
     margin-left: 10px;
     
   }
   .logooben{
-    margin-left: 100px;
+    
     margin-right: 0px;
     margin-top: 8px;
+    float: right;
+    justify-content: right;
   }
   .infobeschreibung {
     flex: 1 1 0;
