@@ -38,18 +38,16 @@
     hier drüber ein aktueller artikel rein
   </div>
   <div class="two">
-
-    <nav>
-      <h2>Ausgewählte Mensa</h2>
-       <input id="toggle" type="checkbox" checked>
-    <ul>
-      <li><a href="#">Mensa 1</a></li>
-      <li><a href="#">Mensa 2</a></li>
-      <li><a href="#">Mensa 3</a></li>
-      <li><a href="#">Mensa 4</a></li>
-    </ul>
+    <nav class= "mensenmenue">
+      
+        
+      <select id="mensen_liste" class="select-css">
+        <option >Mensa</option>
+    </select>
  </nav>
   </div>
+</div>
+
   <div class="three">
     <div class="date-picker">
       <div class="selected-date"></div>
@@ -67,7 +65,21 @@
   </div>
   <div class="four">Four</div>
   <div class="five">Five</div>
-  <div class="six">Six</div>
+  <div class="six">
+    <nav>
+      
+      <h2>Ausgewählte Mensa</h2>
+      
+
+       <input id="toggle" type="checkbox" checked>
+    <ul>
+      <li><a href="#">Mensa 1</a></li>
+      <li><a href="#">Mensa 2</a></li>
+      <li><a href="#">Mensa 3</a></li>
+      <li><a href="#">Mensa 4</a></li>
+    </ul>
+ </nav>
+  </div>
 </div>
 
     <!-- Menü Unten-->
@@ -119,6 +131,7 @@
       </div>
     </div>
     <script src="datepicker.js"></script>
+    <script src="mensenholen.js"></script>
   </body>
  
 </html>
