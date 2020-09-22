@@ -20,53 +20,88 @@
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2px;
+  grid-auto-rows: minmax(50px, auto);
   align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20%;
-    
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 10px; 
+}
+tr{
+  display: grid;
+  grid-gap: 0px;
+  align-items: center;
+  background-color: #FF886B;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  border-spacing: 16px 8px;
+}
+
+.hidedetail{
+  grid-column: 1 / 4;
+  grid-row: 1/5;
+  color: black;
+  background: chartreuse;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  top: 0 ;
+  position: absolute;
+  display: none;
 }
 .one {
   grid-column: 1 / 4;
   grid-row: 1/2;
+
 }
 #eis{
-  width: 100%;
-  height: 60%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+#meal{
+  margin-left: 3%;
+  margin-right: 1.5%;
+  margin-bottom: 20%;
+  
 }
 .two { 
   grid-column: 1 / 4;
   grid-row: 2 / 3;
-  margin-bottom: 0%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .select-css {
   width: 100%;
-  height: 50px;
-  font-size: 100%;
-  font-weight: bold;
+  height: 100%;
+  font-size: 22px;
+ float: left;
+
+ margin-right: 5%;
   cursor: pointer;
   border-radius: 0;
-  background-color: #DE575C;
+  background-color:#FF886B;
   border: none;
   color: #3E3A44;
   padding: 10px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .dropdown-container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   position: relative;
 }
 /* For IE <= 11 */
 .select-css::-ms-expand {
   display: none; 
+
 }
 
 .select-css:hover,
@@ -74,56 +109,33 @@
   color: #3E3A44;
   background-color:#FF886B;
 }
-.select-icon {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 30px;
-  height: 36px;
-  pointer-events: none;
-  padding-left: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-.select-icon svg.icon {
-  transition: fill 0.3s ease;
-  fill: #3E3A44;
-  background-color: #DE575C;
- ;
-}
 
-select:hover ~ .select-icon svg.icon,
-select:focus ~ .select-icon svg.icon {
-  fill: #3E3A44;
-}
 .three {
   grid-column: 1/ 4;
   grid-row: 3 / 4;
-  margin: 0;
 }
 
 .date-picker {
+  margin-right: 3%;
+  margin-left:3%;
 	position: relative;
-	width: 100%;
-	max-width: 320px;
-	height: 60px;
-	background-color: #BC304C;
-	margin: 30px auto;
+  height: 40px;
+	background-color:#DE575C;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-
 	cursor: pointer;
-	user-select: none;
+  user-select: none;
+  
 }
 .mth{
   color: #3E3A44;
 }
 .date-picker:hover {
-	background-color: #F3F3F3;
+	background-color: #BC304C;
 }
 
 .date-picker .selected-date {
-	width: 100%;
-	height: 100%;
 
+	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,7 +149,7 @@ select:focus ~ .select-icon svg.icon {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	right: 0;
+	right:0 ;
 	background-color: #BC304C;
 }
 
@@ -149,7 +161,6 @@ select:focus ~ .select-icon svg.icon {
 	display: flex;
 	justify-content: space-between;
   align-items: center;
-  
 	border-bottom: 2px solid #BC304C;
 }
 
@@ -164,11 +175,11 @@ select:focus ~ .select-icon svg.icon {
 }
 
 .date-picker .dates .month .arrows:hover {
-	background-color: #F3F3F3;
+	background-color: #FF886B;
 }
 
 .date-picker .dates .month .arrows:active {
-	background-color: #00CA85;
+	background-color: #BC304C;
 }
 
 .date-picker .dates .days {
@@ -189,15 +200,76 @@ select:focus ~ .select-icon svg.icon {
   grid-column: 1/4;
   grid-row: 4/5;
 }
+.food{
+  grid-column: 2;
+  grid-row: 1;
+  float:left;
+  margin-bottom: 35%;
+  justify-content: ;
+  background-color: #FF886B;
+  color: #3E3A44;
+}
+#detailinfo{
+  grid-column: 3;
+  grid-row: 1;
+  float: left;
+  margin-bottom: 35%;
+    background-color: #DE575C;
+    border: 2px solid #BC304C;
+    margin-right: 10%;
+
+}
+.preisstudents{
+  grid-column: col 1 / span 3;
+  grid-row: 2;
+  float: inline-end;
+    text-align: center;
+    margin-left: 25%;
+  background-color: #DE575C;
+  border: 2px solid #BC304C;
+}
 .five {
-  grid-column: 1/4;
-  grid-row: 5/6;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 .six {
   grid-column: 1/4;
   grid-row: 6/7;
 }
 
+#bildessen{
+  grid-column: 1;
+  grid-row: 2;
+}
+#kuh{
+  grid-column: 1;
+  grid-row: 2;
+  width: 25px;
+  height: 25px;
+  margin-left: 40%;
+  margin-bottom: 5px;
+  position: relative ;
+
+margin-right: 1%;
+background-color: #FF886B;
+margin-bottom: ;
+}
+#eintopf{
+  grid-column: 1;
+  grid-row: 1/2;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #BC304C;
+}
+#menulog{
+
+  width: 10%;
+  height: 10%;
+  position: relative ;
+float: right ;
+margin-right: 1%;
+background-color: #FF886B;
+}
 .box{
   border: 1px solid #3E3A44;
   margin: 0;
@@ -408,12 +480,15 @@ nav ul a {
     margin-left: 10px;
     
   }
-  .logooben{
-    
+  #logo{
+    width: 45px;
+    height: 45px;
     margin-right: 0px;
-    margin-top: 8px;
-    float: right;
-    justify-content: right;
+    margin-top: 17px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+   
   }
   .infobeschreibung {
     flex: 1 1 0;
@@ -478,17 +553,18 @@ nav ul a {
   }
   
   .mdc-top-navigation-list-item-title {
-    margin-top: 17px;
+    margin-top: 10px;
     margin-bottom: auto;
     justify-content: left;
     background-color: #FDA97C;
     font-size: 28px;
+    color: #3E3A44;
   }
   
   .mdc-top-navigation-list-item-menu {
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #ffffff;
+    color: #3E3A44;
     background-color:#FDA97C;
     justify-content: left;
   }
