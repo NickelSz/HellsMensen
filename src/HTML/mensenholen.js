@@ -1,3 +1,4 @@
+
 const mensen_liste = document.getElementById("mensen_liste");
 var alle_mensen = [];
 var id_mensen = [];
@@ -55,15 +56,21 @@ mensen_liste.onchange = function () {
       for (count in food) {
         var newentry = document.createElement("tr");
         newentry.setAttribute("class", "tabelle");
-        newentry.setAttribute("onclick","detailAnzeigen" );
         table.appendChild(newentry);
 
         var gericht = document.createElement("div");
         gericht.innerHTML = food[count].name;
         gericht.setAttribute("class", "food" );
+        
+        var defaultfoodpic = document.createElement("img");
+        defaultfoodpic.setAttribute("src", "images/fooderror.jpeg");
+        defaultfoodpic.setAttribute("class", "foodpic");
+
+          newentry.appendChild(defaultfoodpic);
         if ( food[count].name == "Erbseneintopf mit Mettenden"){
           var E1Eintopf = document.createElement("img");
           E1Eintopf.setAttribute("src", "images/Erbsensuppe-Rezept-kochen-Eintopf-herzelieb-21.jpg");
+          E1Eintopf.setAttribute("class", "foodpic");
           E1Eintopf.setAttribute("id", "eintopf");
           newentry.appendChild(E1Eintopf);
         }
@@ -107,11 +114,15 @@ mensen_liste.onchange = function () {
     });
 };
 
-function detailAnzeigen() {
-  var x = document.getElementById("showdetail");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+function hidedetailed() {
+    var x = document.getElementById("myDIV");
+  
+      if (x.style.display 
+  === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = 
+    "none";
+    }
+  } 
+
