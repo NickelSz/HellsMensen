@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HellsMensen-Mensen-Liste</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HellsMensen-Ernährung</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="mensa.css" />
   </head>
-
   <body>
     <!-- Menü Oben-->
     <div class="top-bar">
       <div class="mdc-top-navigation">
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
-            <span class="mdc-top-navigation-list-item-title"
-              >Hells Mensen
-            </span>
+            <span class="mdc-top-navigation-list-item-title">Ernährung </span>
             <span class="logooben">
               <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
             </span>
@@ -27,18 +26,34 @@
         </nav>
       </div>
     </div>
+
     <!-- Inhalt-->
+
     <div class="wrapperMensa">
-      <div class="mensengid1">
-        <input  placeholder="Suche Mensen" id="suchfeld" class="inputmensasuche" />
-      </div>
+
+      <div class="mensengid1"></div>
+      <div class="infostatus">Was isst du am liebsten?</div>
       <div class="mensengid2">
-        <button onclick="searchFunction()" id="searchmensabtn" class="glow-on-hover">Starte Suche</button>
+      <label class="schweinstyle">
+        Schwein<input type="checkbox" id="scheincheck" />
+      </label>
+    </div>
+      <div class="mensengrid3">
+        <label class="rindstyle">
+          Rind
+          <input type="checkbox" id="rindcheck" />
+        </label>
       </div>
-      <div class="mensengrid3" >
-        <table id="mensen_liste"></table>
+      <div class="mensengrid4">
+        <label class="veganstyle">Vegan
+          <input type="checkbox" id="vagancheck" />
+        </label>
       </div>
-      <div class="four"></div>
+      <div class="mensengrid5">
+        <label class="vegistyle">ohne Fleisch
+          <input type="checkbox" id="vegicheck" />
+        </label>
+      </div>
     </div>
 
     <!-- Menü Unten-->
@@ -86,8 +101,6 @@
         </nav>
       </div>
     </div>
-    
-    <script src="mensasuche.js"></script>
-    
+    <script src="ernaehrung.js"></script>
   </body>
 </html>

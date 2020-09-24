@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HellsMensen-Mensen-Liste</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HellsMensen-Status</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="mensa.css" />
   </head>
-
   <body>
     <!-- Menü Oben-->
     <div class="top-bar">
@@ -18,7 +19,7 @@
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
             <span class="mdc-top-navigation-list-item-title"
-              >Hells Mensen
+              >Lieblingsgerichte
             </span>
             <span class="logooben">
               <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
@@ -27,18 +28,29 @@
         </nav>
       </div>
     </div>
+
     <!-- Inhalt-->
+    
     <div class="wrapperMensa">
-      <div class="mensengid1">
-        <input  placeholder="Suche Mensen" id="suchfeld" class="inputmensasuche" />
-      </div>
+
+      <div class="mensengid1"></div>
+      <div class="infostatus">Welchen Status hast du?</div>
       <div class="mensengid2">
-        <button onclick="searchFunction()" id="searchmensabtn" class="glow-on-hover">Starte Suche</button>
+      <label class="studentenstyle">
+        Student<input type="checkbox" id="studentcheck" />
+      </label>
+    </div>
+      <div class="mensengrid3">
+        <label class="angestellterstyle">
+          Angestellter
+          <input type="checkbox" id="angestelltercheck" />
+        </label>
       </div>
-      <div class="mensengrid3" >
-        <table id="mensen_liste"></table>
+      <div class="mensengrid4">
+        <label class="gaststyle">Gast
+          <input type="checkbox" id="gastcheck" />
+        </label>
       </div>
-      <div class="four"></div>
     </div>
 
     <!-- Menü Unten-->
@@ -86,8 +98,6 @@
         </nav>
       </div>
     </div>
-    
-    <script src="mensasuche.js"></script>
-    
+    <script src="profil.js"></script>
   </body>
 </html>

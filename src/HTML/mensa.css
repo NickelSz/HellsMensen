@@ -46,8 +46,10 @@ tr {
   grid-row: 1/2;
 }
 #eis {
-  max-width: 100%;
-  height: auto;
+  width: 50%;
+margin-left: 26%;
+margin-top: 15%;
+  height: 50%;
   object-fit: cover;
 }
 
@@ -566,13 +568,18 @@ nav ul a {
   margin-right: 0%;
   margin-top: 10px;
 }
-#suchfeld {
+.inputmensasuche{
   margin-top: 15%;
+  height: 30px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f7b09e;
-  width: 100%;
+  background-color: #ff8f73;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 10px;
+  color: #313131;
 }
+
 
 
 .mensengid1 {
@@ -582,20 +589,35 @@ nav ul a {
 .mensengid2 {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
-  margin-left: 10px;
-  margin-right: 10px;
+ 
+  
 }
 .mensengrid3 {
   height: 100%;
   grid-column: 1/ 4;
   grid-row: 3 / 4;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+ 
+  
+}
+.mensengrid4 {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  
+  width: 100%;
+  
+}
+.mensengrid4 {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+  
+  width: 100%;
+  
 }
 #mensen_liste {
   align-items: center;
   margin-top: 10px;
+  
 }
 .mensen-option {
   grid-column: 1;
@@ -608,6 +630,7 @@ margin-left: 5px;
   font-weight: bold;
   color: white;
   background-color: transparent;
+  max-width: 100%;
 }
 #namemensen {
   grid-column: 1 / 2;
@@ -657,9 +680,9 @@ btn{
 }
 
 .glow-on-hover {
-  width: 100%;
-  
-  height: 5%;
+  width: 95%;
+  margin-left: 2%;
+  height: 30px;
   border: none;
   outline: none;
   color: #fff;
@@ -672,7 +695,7 @@ btn{
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #FDA97C, #FF886B, #DE575C, #BC304C, #3E3A44, #DE575C, #FDA97C, #ff0000);
   position: absolute;
   top: -2px;
   left:-2px;
@@ -712,4 +735,173 @@ btn{
 }
 #background{
   background-color:#3E3A44 ;
+}
+.wenipic{
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 50%;
+  float: left;
+  filter: blur(0.5px);
+  background-color:#3E3A44 ;
+}
+.wilhelminenhof{
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 50%;
+  float: left;
+  filter: blur(0.5px);
+  background-color:#3E3A44 ;
+}
+.infostatus{
+  grid-column: 1/ col 2;
+  grid-row: 1;
+  width: 90%;
+  float: left;
+  margin-top: 30%;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 2px solid #3E3A44;
+}
+.studentenstatus{
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  float: left;
+  margin-top: 9%;
+  font-size: 25px;
+  margin-left: 13%;
+  margin-right: 5%;
+  z-index: 3;
+  
+  
+}
+.angestellterstatus{
+  grid-column: 2;
+  grid-row: 3;
+  width: 90%;
+  float: left;
+  margin-top: 5%;
+  font-size: 25px;
+  margin-left: 0%;
+  margin-right: 5%;
+}
+.gaststatus{
+  grid-column: 2;
+  grid-row: 3;
+  width: 90%;
+  float: left;
+  margin-top: 5%;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* ------------------------- Label ------------------
+
+*/
+.studentenstyle{
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+  
+}
+.angestellterstyle{
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+  
+}
+.gaststyle{
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+  
+}
+#studentcheck{
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+  }
+  #angestelltercheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+  #gastcheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+  .schweinstyle{
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    
+  }
+  #scheincheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+  .rindstyle{
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    
+  }
+  #rindcheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+  .veganstyle{
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    
+  }
+  #vagancheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+  .vegistyle{
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    
+  }
+  #vegicheck{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-top: 1.5%;
+  }
+.logotitel{
+  font-size: 30px;
+  margin-left: 25%;
+  display: block;
+  align-items: center;
 }
