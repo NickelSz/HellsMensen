@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>HellsMensen-Einstellungen</title>
+    <title>HellsMensen-Impressum</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="mensa.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <!-- Menü Oben-->
@@ -21,11 +18,9 @@
       <div class="mdc-top-navigation">
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
-            <span class="mdc-top-navigation-list-item-title"
-              >In der Nähe
-            </span>
-            <span class= "logooben">
-                <img src="images/HellsLogo_Groß.png" alt="" id = "logo">
+            <span class="mdc-top-navigation-list-item-title">Impressum </span>
+            <span class="logooben">
+              <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
             </span>
           </span>
         </nav>
@@ -33,15 +28,36 @@
     </div>
 
     <!-- Inhalt-->
-    <div class="inhalt">
-      <p class="standortbestimmen">Hier Klicken um Standort anzuzeigen</p>
-      <button onclick="getLocation()" class="geolocation">Standort Anzeigen</button>
-      <p id="demo"></p>
-      <div id='map'></div>
-      
-        
-    </div>
 
+    <div class="wrapperdatenschutz">
+      <div class="impresusm">
+        <table>
+          <tr class="impressumtabel">
+            <th>HellsMensen Gesellschaft mit beschränkter Haftung</th>
+
+            <th>Wilhelminenhofstraße 20</th>
+            <th>D-12569 Berlin</th>
+
+            <th>Vertretungsberechtige Geschäftsführerin: Lauri Pechbrenner</th>
+
+            <th>Telefon: 123/123456</th>
+            <th>Fax: 123/123457</th>
+
+            <th>EMail: info@hellsmensen.de</th>
+            <th></th>
+            <th>Registergericht: Amtsgericht Berlin</th>
+            <th>Registernummer: HRB 12345</th>
+
+            <th>
+              Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE 123456789
+            </th>
+            <th>
+              Inhaltlich Verantwortliche: Lauri Pechbrenner(Anschrift s.o.)
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
     <!-- Menü Unten-->
     <div class="bottom-nav">
       <div class="mdc-bottom-navigation">
@@ -49,8 +65,7 @@
           <span class="mdc-bottom-navigation-list-item">
             <span class="material-icons mdc-bottom-navigation-list-item-icon"
               >local_dining
-              </span
-            >
+            </span>
             <a href="main.html">
               <span class="mdc-bottom-navigation-list-item-text"
                 >Speiseplan</span
@@ -72,9 +87,7 @@
               >location_on</span
             >
             <a href="indernaehe.html">
-              <span class="mdc-bottom-navigation-list-item-text"
-                >Standort</span
-              >
+              <span class="mdc-bottom-navigation-list-item-text">Standort</span>
             </a>
           </span>
           <span class="mdc-bottom-navigation-list-item">
@@ -90,41 +103,5 @@
         </nav>
       </div>
     </div>
-    <script src="map.js"></script>
-    <script>
-     
-      var x = document.getElementById("demo");
-     
-     function getLocation() {
-       if (navigator.geolocation) {
-         navigator.geolocation.getCurrentPosition(showPosition);
-       } else { 
-         x.innerHTML = "Geolocation is not supported by this browser.";
-       }
-     }
-     
-     function showPosition(position) {
-       x.innerHTML = "Latitude: " + position.coords.latitude + 
-       "<br>Longitude: " + position.coords.longitude;
-       function showError(error) {
-       switch(error.code) {
-         case error.PERMISSION_DENIED:
-           x.innerHTML = "User denied the request for Geolocation."
-           break;
-         case error.POSITION_UNAVAILABLE:
-           x.innerHTML = "Location information is unavailable."
-           break;
-         case error.TIMEOUT:
-           x.innerHTML = "The request to get user location timed out."
-           break;
-         case error.UNKNOWN_ERROR:
-           x.innerHTML = "An unknown error occurred."
-           break;
-     
-       }
-       
-     }
-     }
-         </script>
   </body>
 </html>
