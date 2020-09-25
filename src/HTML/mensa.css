@@ -44,13 +44,13 @@ tr {
 .one {
   grid-column: 1 / 4;
   grid-row: 1/2;
+  background-color: transparent;
 }
 #eis {
-  width: 50%;
-margin-left: 26%;
-margin-top: 15%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  background-color: transparent;
 }
 
 #meal {
@@ -764,6 +764,7 @@ btn{
   margin-left: 5%;
   margin-right: 5%;
   border-bottom: 2px solid #3E3A44;
+  background-color: #FF886B;
 }
 .studentenstatus{
   grid-column: 1;
@@ -807,7 +808,7 @@ btn{
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
-  
+  background-color: #FF886B;
 }
 .angestellterstyle{
   display: block;
@@ -815,6 +816,7 @@ btn{
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
+  background-color: #FF886B;
   
 }
 .gaststyle{
@@ -823,6 +825,7 @@ btn{
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
+  background-color: #FF886B;
   
 }
 #studentcheck{
@@ -900,8 +903,47 @@ btn{
     margin-top: 1.5%;
   }
 .logotitel{
-  font-size: 30px;
-  margin-left: 25%;
+  font-size: 40px;
+  margin-left: 19%;
   display: block;
   align-items: center;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 5px;
+  text-shadow: 2px 5px 10px rgba(129, 24, 24, 0.5);
+  color: #b42a2e;
+}
+
+#map {
+  position: absolute;
+  
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  
+  z-index: -1;
+}
+.hallo{
+  font-size: 72px;
+}
+.marker {
+  background-image: url(images/location_on-black-18dp.svg) ;
+  background-size: cover;
+  background-color: #fda97c;
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.standortbestimmen{
+  margin-top: 100px;
+}
+.markerhome {
+  background-size: cover;
+  background-color: #3E3A44;
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
