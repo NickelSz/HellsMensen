@@ -12,8 +12,9 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
+<link rel="manifest" href="/public/manifest.json">
     <link rel="stylesheet" href="mensa.css" />
+    <link rel="serviceworker" href="/src/serviceWorker.js">
   </head>
   <body>
     <!-- Menü Oben-->
@@ -108,5 +109,22 @@
     </div>
     <script src="datepicker.js"></script>
     <script src="mensenholen.js"></script>
+  <script type="text/javascript">
+
+  (function(){
+    console.log("Trying to register service worker");
+    if ("serviceWorker" in navigator){
+      navigator.serviceWorker
+      .register("serviceworker.js")
+      .then(function(reg){
+        console.log("Registration succeeded" , reg);
+
+      }).catch(function(error){
+        console.log("Registration failed with", error);
+
+      });
+    }
+  })();;
+  </script>  
   </body>
 </html>
