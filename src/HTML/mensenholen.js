@@ -1,3 +1,12 @@
+ /**
+ * Definiert neue Konstanten die er sich aus der API holt
+ * @constant {fetch} mensen
+ * @constant {string} Mensa API
+ * @var id_Mensen neuer Array
+ * @var alle_Mensen neuer Array
+ */
+
+
 const mensen_liste = document.getElementById("mensen_liste");
 var alle_mensen = [];
 var id_mensen = [];
@@ -31,6 +40,13 @@ const mensen = fetch("https://openmensa.org/api/v2/canteens/")
 
 const takeday = document.getElementById("takeday");
 const table = document.getElementById("meal");
+
+ /**
+ * Definiert neue FUnktion für den Wechsel der Menseliste
+ * @param {string} "" Wechsel der Liste
+ * @return MensenListe nachdem der User etwas angepasst hat
+ * 
+ */
 
 mensen_liste.onchange = function () {
   table.innerHTML = "";
@@ -155,6 +171,14 @@ mensen_liste.onchange = function () {
             break;
 
           }
+
+          /**
+          * else if Funktion für die Auswahl der Checkboxen 
+          * @return MensenListe nachdem der User etwas angepasst hat
+          * die Anpassung erfolgt in einem separaten Menü
+          * 
+          */
+
           else {
             if (JSON.parse(localStorage.getItem("scheincheck"))) {
               if (urlnote[zahl] == "Schweinefleisch") {

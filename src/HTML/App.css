@@ -167,13 +167,6 @@ h1, .subhead {
     font-size: 1.1em;
 }
 
- /**
-* blue-container.css
-* 
-* für was sind die Container da
-*
-*/
-
 .blue-container {
     width: 100%;
     background: #FF886B;
@@ -250,13 +243,6 @@ figcaption {
 h2 {
     margin-top: 7%;
 }
-
-  /**
-* cta.css
-* 
-* was macht cta
-*
-*/
 
 .cta {
     background: #00CC80;
@@ -361,24 +347,6 @@ nav ul li a:hover {
     background-color: rgb(65, 73, 78);
 }
 
-.exit-btn {
-    margin-bottom: 1em;
-    margin-top: -1.3em;
-    text-align: right;
-    padding: 0 1.4em;
-}
-
-  /**
-* exit-btn.css
-* 
-* was macht das
-*
-*/
-
-.exit-btn img {
-    width: 15px;
-    cursor: pointer;
-}
 
 @media only screen and (min-width: 650px)  {
 
@@ -436,7 +404,7 @@ nav ul li a:hover {
   /**
 * media.css
 * 
-* was wird hier gemacht
+* Screen Anpassungen 
 *
 */
 

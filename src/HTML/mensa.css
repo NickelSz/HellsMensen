@@ -1,3 +1,11 @@
+/**
+* mensa.css
+* 
+* Stylesheet für die komplette App. Alle Icons Bilder und sonstige Features werden in dieser CSS Datei gestylt,
+* was die Grundlage der App ausmacht.
+* googele fonts werden importiert zur Gestaltung.
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
 * {
