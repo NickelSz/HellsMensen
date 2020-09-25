@@ -1,3 +1,9 @@
+<!--
+  In dieser HTML Seite wird die In der Nähe Webseite gebaut, 
+  die die Mensen, die sich in der Nähe befinden angezeigt 
+  wobei die Inhalte jeweils aufgeteilt sind (s. Beschreibung)
+  Ebenfalls ist eine Funktion im unteren Teil des Codes enthalten um den Standort zu berechnen
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +22,9 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
+
     <!-- Menü Oben-->
+
     <div class="top-bar">
       <div class="mdc-top-navigation">
         <nav class="mdc-top-navigation-list-less">
@@ -33,6 +41,7 @@
     </div>
 
     <!-- Inhalt-->
+
     <div class="inhalt">
       <p class="standortbestimmen">Hier Klicken um Standort anzuzeigen</p>
       <button onclick="getLocation()" class="geolocation">Try It</button>
@@ -43,6 +52,7 @@
     </div>
 
     <!-- Menü Unten-->
+
     <div class="bottom-nav">
       <div class="mdc-bottom-navigation">
         <nav class="mdc-bottom-navigation-list">
@@ -95,6 +105,12 @@
      
       var x = document.getElementById("demo");
      
+ /**
+ * Holt sich den momentanen Standort des Users
+ * @param {location} e  
+ * mit  error Funktion
+ */
+
      function getLocation() {
        if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(showPosition);
@@ -103,6 +119,12 @@
        }
      }
      
+ /**
+ * bildet den momentnanen Standort des Users auf der Seite ab 
+ * @param {location}  position
+ * @return {location} position des Users
+ * 
+ */
      function showPosition(position) {
        x.innerHTML = "Latitude: " + position.coords.latitude + 
        "<br>Longitude: " + position.coords.longitude;

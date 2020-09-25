@@ -1,7 +1,14 @@
-
+/**
+ * Import von MapBox
+ * 
+ */
 mapboxgl.accessToken = 'pk.eyJ1IjoibGF1cmlwZWMiLCJhIjoiY2tmaGF1YXJoMGF1MTJ1cDhlMHp0aDV4dCJ9.8Sz7_ZLqPFs6Pte0nhpDzQ';
 
-
+/**
+ * Definiert neue Variable die er sich aus der Datenbank holt
+ * @var {String} x momentaner Standort des Users
+ * 
+ */
 var x = document.getElementById("demo");
 function getLocation() {
   if (navigator.geolocation) {
@@ -10,6 +17,12 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
+
+/**
+ * Funktion mit aktueller Position
+ * @return momentanen Standort per Ausgabe
+ * 
+ */
 
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude +
@@ -28,6 +41,11 @@ var map = new mapboxgl.Map({
   
 });
 
+/**
+ * Zeigt optisch den momentanen Standort der Perosn auf der Karte
+ * @return Standort auf der MapBox
+ * 
+ */
 var geojson = {
     type: 'FeatureCollection',
     features: [{

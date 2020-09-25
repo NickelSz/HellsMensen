@@ -1,3 +1,13 @@
+ /**
+ * Definiert neue Konstanten die er sich aus der Query holt
+ * @constant {button} Suchbutton
+ * @constant {input} InputField
+ * @constant {String} MensenListe
+ * @constant {fetch} Id von der API
+ * @return Name, City, Adresse und Id der Mensen aus der API
+ * 
+ */
+
 const button = document.getElementById("searchmensabtn");
 button.onclick = function () {
   const input = document.getElementById("suchfeld");
@@ -26,6 +36,13 @@ button.onclick = function () {
           ]);
         }
       }
+
+ /**
+ * If Abfragen nach InputValue, for Schleife um den neu erstellten Array durchzugehen
+ * @return input value + übereinstimmende Mensa
+ * @return Mensen werden mit allen Werten ausgegeben 
+ */
+
       var x = 0;
       for (x = 0; x < alle_mensen.length; x++) {
         if (alle_mensen[x][0].includes(input.value)) {
@@ -61,6 +78,12 @@ button.onclick = function () {
       }
     });
 };
+
+ /**
+ * Legt fest welche Mensen welches Bild erhalten
+ * @return bestimmte Mensen erhalten ein Bild wenn nach diesen gesucht werden
+ * 
+ */
 
 const mensen_liste = document.getElementById("mensen_liste");
 var alle_mensen = [];

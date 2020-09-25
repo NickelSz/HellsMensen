@@ -1,10 +1,25 @@
-const schwein = document.getElementById("scheincheck");
+ /**
+ * Definiert neue Konstanten die er sich aus der Datenbank holt
+ * @constant {string} schwein
+ * @constant {string} rind
+ * @constant {string} vegan
+ * @constant {string} vegi
+ *
+ */
+
+const schwein = document.getElementById("schweincheck");
 const rind = document.getElementById("rindcheck");
 const vegan = document.getElementById("vagancheck");
 const vegi = document.getElementById("vegicheck");
 
+ /**
+ * Definiert neue Konstanten die er sich aus der Query holt
+ * @event () Text der bei Klick ausgewählt werden kann und eine Checkbox markiert
+ * für Schwein, Rind, Vegan und Vegi
+ * 
+ */
 schwein.onclick = function () {
-  localStorage.setItem("scheincheck", JSON.stringify(schwein.checked));
+  localStorage.setItem("schweincheck", JSON.stringify(schwein.checked));
 };
 rind.onclick = function () {
   localStorage.setItem("rindcheck", JSON.stringify(rind.checked));
@@ -15,8 +30,9 @@ vegan.onclick = function () {
 vegi.onclick = function () {
   localStorage.setItem("vegicheck", JSON.stringify(vegi.checked));
 };
+
 function checkefood() {
-  schwein.checked = JSON.parse(localStorage.getItem("scheincheck"));
+  schwein.checked = JSON.parse(localStorage.getItem("schweincheck"));
   rind.checked = JSON.parse(localStorage.getItem("rindcheck"));
   vegan.checked = JSON.parse(localStorage.getItem("vagancheck"));
   vegi.checked = JSON.parse(localStorage.getItem("vegicheck"));

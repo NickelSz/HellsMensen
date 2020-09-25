@@ -1,7 +1,26 @@
+/**
+ * Definiert eine neue Variable
+ * @constant {date} neues datum;
+ * 
+ */
+
 const date = new Date();
+
+/**
+ * neue Funktion um den Kalender auf ein bestimmtes Datum zu setzen
+ * @returns {date} aktuelles Datum
+ * 
+ */
 
 const renderCalendar = () => {
   date.setDate(1);
+
+   /**
+ * Definiert eine neue Variable idem er sich in der Query die Tage der Mensen raussucht, holt sich alle definierten Tage
+ * @constant {date} monthDays
+ * @returns {date} Monate und Tage
+ * 
+ */
 
   const monthDays = document.querySelector(".days");
 
@@ -27,6 +46,12 @@ const renderCalendar = () => {
 
   const nextDays = 7 - lastDayIndex - 1;
 
+   /**
+ * Definiert einen neuen Array mit allen Monaten
+ * @constant {date} neue Monate
+ * 
+ */
+
   const months = [
     "January",
     "February",
@@ -42,11 +67,22 @@ const renderCalendar = () => {
     "December",
   ];
 
+   /**
+ * Listet aktuellen Tag und Monat auf mit Hilfe von innerHTML
+ * @return {date} Tag und Monat
+ * 
+ */
+
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
   document.querySelector(".date p").innerHTML = new Date().toDateString();
 
   let days = "";
+
+   /**
+ * hier fehlen noch Infos !!!
+ * 
+ */
 
   for (let x = firstDayIndex; x > 0; x--) {
     days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
@@ -69,10 +105,22 @@ const renderCalendar = () => {
   }
 };
 
+/**
+ * Neuer EventListner der beim drücken auf die Datums Conatiner ausgelöst wird und das den letzten Monat anzeigt
+ * @param {event} event beim drücken des Monats Button 
+ * 
+ */
+
 document.querySelector(".prev").addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
 });
+
+/**
+ * Neuer EventListner der beim drücken auf die Datums Conatiner ausgelöst wird und das den nächsten Monat anzeigt
+ * @param {event} event beim drücken des Monats Button 
+ * 
+ */
 
 document.querySelector(".next").addEventListener("click", () => {
   date.setMonth(date.getMonth() + 1);

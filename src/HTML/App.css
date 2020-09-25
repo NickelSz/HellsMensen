@@ -1,3 +1,11 @@
+/**
+* App.css
+* 
+* Stylesheet für die komplette App. Alle Icons Bilder und sonstige Features werden in dieser CSS Datei gestylt,
+* was die Grundlage der App ausmacht.
+* googele fonts werden importiert zur Gestaltung.
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 * {
     margin: 0;
@@ -14,6 +22,14 @@ body {
     background-color: lightblue;
     color: white;
 }
+
+/**
+* calender.css
+* 
+* Gestalutng des Kalenders auf der Hauptseite der App.
+* Hierbei wurde eine verständliche Struktur verwendent um dem User eine einfache Auswahlmöglichkeit zu geben.
+* Jeder Monat, Wochentag und Tag wurden separat gestylt.
+*/
 
 .calendar {
     width: 45rem;
@@ -96,12 +112,13 @@ body {
   .today {
     background-color: #3E3A44;
   }
-  
 
-
-
-
-
+/**
+* blockquote.css
+* 
+* Mit Blackquote wird ein separater Rand an der Seite des Kalenders in diesem Fall erstellt.
+*
+*/
 
 p, blockquote {
     font-size: .9em;
@@ -149,6 +166,13 @@ h1, .subhead {
 .subhead {
     font-size: 1.1em;
 }
+
+ /**
+* blue-container.css
+* 
+* für was sind die Container da
+*
+*/
 
 .blue-container {
     width: 100%;
@@ -227,6 +251,13 @@ h2 {
     margin-top: 7%;
 }
 
+  /**
+* cta.css
+* 
+* was macht cta
+*
+*/
+
 .cta {
     background: #00CC80;
     width: calc(100% - 1em);
@@ -240,6 +271,14 @@ h2 {
     position: relative;
     z-index: 4;
 }
+
+  /**
+* footer.css
+* 
+* in den folenden Css Daten werden alle notwenigen Styles für alle footer auf jeder Seite gebaut.
+* Daruch wird ein einheitliches Bild geschaffen für den User
+*
+*/
 
 .footer-container {
     width: 100%;
@@ -277,6 +316,13 @@ h2 {
     border-radius: 50%;
 }
 
+  /**
+* nav ul.css
+* 
+* in diesen datein werden die Links zu den Footern displayed und gestylt 
+* Somit weiß der User mit einem Klick auf welche Seite er genau geht
+*
+*/
 ul.footer-links {
     margin: 0 auto;
 }
@@ -321,6 +367,13 @@ nav ul li a:hover {
     text-align: right;
     padding: 0 1.4em;
 }
+
+  /**
+* exit-btn.css
+* 
+* was macht das
+*
+*/
 
 .exit-btn img {
     width: 15px;
@@ -379,6 +432,13 @@ nav ul li a:hover {
     }
 
 }
+
+  /**
+* media.css
+* 
+* was wird hier gemacht
+*
+*/
 
 @media only screen and (min-width: 875px)  {
 
