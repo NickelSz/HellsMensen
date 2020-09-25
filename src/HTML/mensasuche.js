@@ -40,9 +40,175 @@ button.onclick = function () {
           newMensenOption.innerText = alle_mensen[x][0];
           newentry.appendChild(newMensenOption);
 
-          var defaultmensapic = document.createElement("img");
-          defaultmensapic.setAttribute("src", "images/mensadefault.jpg");
-          defaultmensapic.setAttribute("class", "defaultmensapic");
+          if (alle_mensen[x] == "Mensa HTW Wilhelminenhof") {
+            console.log("wilhelm");
+            var wilhelmpic = document.createElement("img");
+            wilhelmpic.setAttribute(
+              "src",
+              "images/bildermensen/sized/wilhelm.jpg"
+            );
+            wilhelmpic.setAttribute("class", "wilhelminenhof");
+            newentry.appendChild(wilhelmpic);
+    
+          } else if (alle_mensen[x] == "Mensa Wernigerode") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/weni.jpg");
+            wernipic.setAttribute("class", "wenipic");
+            newentry.appendChild(wernipic);
+    
+          } 
+          else if (alle_mensen[x] == "DomCafete Halberstadt") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/halberstadt.jpg");
+            wernipic.setAttribute("class", "halberstadt");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Hannover Hauptmensa") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Hannover, Contine") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa Caballus") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa HMTMH") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa TiHo-Tower") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa TiHo-Tower") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa HMTMH") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa Ricklinger Stadtweg") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Hannover, Mensa Große Pause") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Hannover, Cafeteria Herrenhausen") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Hannover Hauptmensa Marktstand") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+            wernipic.setAttribute("class", "hannover");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "ensa FU II Otto-von-Simson-Straße") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+            wernipic.setAttribute("class", "mensafu");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa FU II Otto-von-Simson-Straße") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+            wernipic.setAttribute("class", "mensafu");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa FU II Otto-von-Simson-Straße") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+            wernipic.setAttribute("class", "mensafu");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa FU Herrenhaus Düppel") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+            wernipic.setAttribute("class", "mensafu");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa FU Lankwitz Malteserstraße") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+            wernipic.setAttribute("class", "mensafu");
+            newentry.appendChild(wernipic);
+    
+          }
+          else if (alle_mensen[x] == "Mensa HTW Treskowallee") {
+            console.log("werni");
+            var wernipic = document.createElement("img");
+            wernipic.setAttribute("src", "images/bildermensen/sized/treskow.jpg");
+            wernipic.setAttribute("class", "treskow");
+            newentry.appendChild(wernipic);
+    
+          }
+          else {
+            console.log("default");
+            var defaultmensapic = document.createElement("img");
+            defaultmensapic.setAttribute("src", "images/mensadefault.jpg");
+            defaultmensapic.setAttribute("class", "defaultmensapic");
+            newentry.appendChild(defaultmensapic);
+          }
 
           var mensadetail = document.createElement("div");
           mensadetail.setAttribute("class", "mensadetailclasse");
@@ -97,7 +263,7 @@ const mensen = fetch("https://openmensa.org/api/v2/canteens/")
         var wilhelmpic = document.createElement("img");
         wilhelmpic.setAttribute(
           "src",
-          "images/bildermensen/wilhelminenhof.jpg"
+          "images/bildermensen/sized/wilhelm.jpg"
         );
         wilhelmpic.setAttribute("class", "wilhelminenhof");
         newentry.appendChild(wilhelmpic);
@@ -105,11 +271,156 @@ const mensen = fetch("https://openmensa.org/api/v2/canteens/")
       } else if (alle_mensen[x] == "Mensa Wernigerode") {
         console.log("werni");
         var wernipic = document.createElement("img");
-        wernipic.setAttribute("src", "images/bildermensen/wernigerode.jpg");
+        wernipic.setAttribute("src", "images/bildermensen/sized/weni.jpg");
         wernipic.setAttribute("class", "wenipic");
         newentry.appendChild(wernipic);
 
-      } else {
+      } 
+      else if (alle_mensen[x] == "DomCafete Halberstadt") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/halberstadt.jpg");
+        wernipic.setAttribute("class", "halberstadt");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Hannover Hauptmensa") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Hannover, Contine") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa Caballus") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa HMTMH") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa TiHo-Tower") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa TiHo-Tower") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa HMTMH") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa Ricklinger Stadtweg") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Hannover, Mensa Große Pause") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Hannover, Cafeteria Herrenhausen") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Hannover Hauptmensa Marktstand") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/hannover.jpg");
+        wernipic.setAttribute("class", "hannover");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "ensa FU II Otto-von-Simson-Straße") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+        wernipic.setAttribute("class", "mensafu");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa FU II Otto-von-Simson-Straße") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+        wernipic.setAttribute("class", "mensafu");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa FU II Otto-von-Simson-Straße") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+        wernipic.setAttribute("class", "mensafu");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa FU Herrenhaus Düppel") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+        wernipic.setAttribute("class", "mensafu");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa FU Lankwitz Malteserstraße") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/mensafu.jpg");
+        wernipic.setAttribute("class", "mensafu");
+        newentry.appendChild(wernipic);
+
+      }
+      else if (alle_mensen[x] == "Mensa HTW Treskowallee") {
+        console.log("werni");
+        var wernipic = document.createElement("img");
+        wernipic.setAttribute("src", "images/bildermensen/sized/treskow.jpg");
+        wernipic.setAttribute("class", "treskow");
+        newentry.appendChild(wernipic);
+
+      }
+      else {
         console.log("default");
         var defaultmensapic = document.createElement("img");
         defaultmensapic.setAttribute("src", "images/mensadefault.jpg");

@@ -73,11 +73,41 @@ mensen_liste.onchange = function () {
             defaultfoodpic.setAttribute("class", "foodpic");
             newentry.appendChild(defaultfoodpic);
 
-            if (food[count].name == "Erbseneintopf mit Mettenden") {
+            if (food[count].name == "Kürbiseintopf") {
               var E1Eintopf = document.createElement("img");
               E1Eintopf.setAttribute(
                 "src",
-                "images/Erbsensuppe-Rezept-kochen-Eintopf-herzelieb-21.jpg"
+                "images/Essen/kürbiseintopf.jpg"
+              );
+              E1Eintopf.setAttribute("class", "foodpic");
+              E1Eintopf.setAttribute("id", "eintopf");
+              newentry.appendChild(E1Eintopf);
+            }
+            if (food[count].name == "Fingermöhren") {
+              var E1Eintopf = document.createElement("img");
+              E1Eintopf.setAttribute(
+                "src",
+                "images/Essen/möhren.jpg"
+              );
+              E1Eintopf.setAttribute("class", "foodpic");
+              E1Eintopf.setAttribute("id", "eintopf");
+              newentry.appendChild(E1Eintopf);
+            }
+            if (food[count].name == "Karamellpudding") {
+              var E1Eintopf = document.createElement("img");
+              E1Eintopf.setAttribute(
+                "src",
+                "images/Essen/Karamellpudding.jpg"
+              );
+              E1Eintopf.setAttribute("class", "foodpic");
+              E1Eintopf.setAttribute("id", "eintopf");
+              newentry.appendChild(E1Eintopf);
+            }
+            if (food[count].name == "Blumenkohl-Brokkoli-Gratin") {
+              var E1Eintopf = document.createElement("img");
+              E1Eintopf.setAttribute(
+                "src",
+                "images/Essen/brokoli.jpg"
               );
               E1Eintopf.setAttribute("class", "foodpic");
               E1Eintopf.setAttribute("id", "eintopf");
@@ -86,12 +116,6 @@ mensen_liste.onchange = function () {
             var kategorie = document.createElement("div");
             kategorie.innerHTML = food[count].category;
             kategorie.setAttribute("class", "kategorie");
-            if (food[count].category == "Eintopf") {
-              var kuh = document.createElement("img");
-              kuh.setAttribute("src", "images/kuh.png");
-              kuh.setAttribute("id", "kuh");
-              newentry.appendChild(kuh);
-            }
             if (
               food[count].category == "Wahlmenü (Komponente ohne Fleisch)"
             ) {
