@@ -1,3 +1,14 @@
+ /**
+ * Definiert neue Konstanten die er sich aus der Query holt
+ * @constant {date} date_picker_element
+ * @constant {date} selected_date_element
+ * @constant {date} dates_element
+ * @constant {date} mth_element
+ * @constant {date} next_mth_element
+ * @constant {date} prev_mth_element
+ * @constant {date} days_element
+ */
+
 const date_picker_element = document.querySelector('.date-picker');
 const selected_date_element = document.querySelector('.date-picker .selected-date');
 const dates_element = document.querySelector('.date-picker .dates');
@@ -6,7 +17,22 @@ const next_mth_element = document.querySelector('.date-picker .dates .month .nex
 const prev_mth_element = document.querySelector('.date-picker .dates .month .prev-mth');
 const days_element = document.querySelector('.date-picker .dates .days');
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+/**
+ * Definiert einen neuen Array mit allen Monaten
+ * @constant {date} neue Monate
+ * 
+ */
+
+ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+ /**
+ * Definiert neue Variablen für Datum, Monat, Tag und Jahr, sowie ein dateformatter und selector
+ * @constant {date} neues Datum
+ * @constant {date} neuen Tag
+ * @constant {date} neuen Monat
+ * @constant {date} neues Jahr
+ * 
+ */
 
 let date = new Date();
 let day = date.getDate();
@@ -25,7 +51,14 @@ selected_date_element.dataset.value = selectedDate;
 
 populateDates();
 
-// EVENT LISTENERS
+/**
+ * Neue EventListner für Klick auf das Datum, nächsten Monat und letzten Monat
+ * @event toggleDatePicker
+ * @event goToNextMonth
+ * @event goToPrevMonth
+ * 
+ */
+
 date_picker_element.addEventListener('click', toggleDatePicker);
 next_mth_element.addEventListener('click', goToNextMonth);
 prev_mth_element.addEventListener('click', goToPrevMonth);
@@ -37,6 +70,12 @@ function toggleDatePicker (e) {
 	}
 }
 
+/**
+ * Setzt das momentane Datum
+ * @param {date} e  
+ * 
+ */
+
 function goToNextMonth (e) {
 	month++;
 	if (month > 11) {
@@ -47,6 +86,13 @@ function goToNextMonth (e) {
 	populateDates();
 }
 
+/**
+ * Funktion zur berechnung des letzten Monats
+ * @param {date} e 
+ * @return {date} monat
+ * 
+ */
+
 function goToPrevMonth (e) {
 	month--;
 	if (month < 0) {
@@ -56,6 +102,14 @@ function goToPrevMonth (e) {
 	mth_element.textContent = months[month] + ' ' + year;
 	populateDates();
 }
+
+/**
+ * Funktion zur Erstellung des Kalenders, for Schleife wird durchlaufen um für jeden Monat die Tage zu bestimmen 
+ * und diese hinzuzufügen
+ * @param {date} e 
+ * @event EventListner um den Tag auszuwählen
+ * 
+ */
 
 function populateDates (e) {
 	days_element.innerHTML = '';
@@ -90,7 +144,14 @@ function populateDates (e) {
 	}
 }
 
-// HELPER FUNCTIONS
+/**
+ * Funktion zur Erstellung des Kalenders, for Schleife wird durchlaufen um für jeden Monat die Tage zu bestimmen 
+ * und diese hinzuzufügen (Helper Functions)
+ * @param {date} e 
+ * @event EventListner um den Tag auszuwählen
+ * 
+ */
+
 function checkEventPathForClass (path, selector) {
 	for (let i = 0; i < path.length; i++) {
 		if (path[i].classList && path[i].classList.contains(selector)) {
@@ -100,6 +161,13 @@ function checkEventPathForClass (path, selector) {
 	
 	return false;
 }
+/**
+ * Funktion um das Datum richtig zu formatieren
+ * @param {date} d 
+ * @event EventListner um den Tag auszuwählen
+ * 
+ */
+
 function formatDate (d) {
 	let day = d.getDate();
 	if (day < 10) {
