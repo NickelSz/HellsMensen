@@ -4,6 +4,8 @@
  * @constant {string} Mensa API
  * @var id_Mensen neuer Array
  * @var alle_Mensen neuer Array
+ * 
+ * externe Quelle: https://www.youtube.com/watch?v=4UoUqnjUC2c
  */
 
 

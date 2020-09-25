@@ -6,6 +6,7 @@
  * @constant {fetch} Id von der API
  * @return Name, City, Adresse und Id der Mensen aus der API
  * 
+ * externe Quelle: https://www.youtube.com/watch?v=JJatzkPcmoI
  */
 
 const button = document.getElementById("searchmensabtn");
