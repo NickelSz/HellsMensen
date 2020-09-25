@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
 * {
   background-color: #fda97c;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #313131;
 }
 /*body{
   background-image: linear-gradient(15deg,#FDA97C 0%, #DE575C 100%);	
@@ -34,7 +34,7 @@ tr {
   background-color: #ff886b;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   border-spacing: 16px 8px;
- width: 103%;
+  width: 103%;
   margin-right: 5%;
 }
 
@@ -568,7 +568,7 @@ nav ul a {
   margin-right: 0%;
   margin-top: 10px;
 }
-.inputmensasuche{
+.inputmensasuche {
   margin-top: 15%;
   height: 30px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
@@ -580,8 +580,6 @@ nav ul a {
   color: #313131;
 }
 
-
-
 .mensengid1 {
   grid-column: 1 / 4;
   grid-row: 1/2;
@@ -589,42 +587,35 @@ nav ul a {
 .mensengid2 {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
- 
-  
 }
 .mensengrid3 {
   height: 100%;
   grid-column: 1/ 4;
   grid-row: 3 / 4;
   width: 100%;
- 
-  
 }
-.mensengrid4 {
+.mensengridprofil {
   grid-column: 1 / 4;
   grid-row: 4 / 5;
-  
+  height: 100%;
   width: 100%;
-  
 }
 .mensengrid4 {
   grid-column: 1 / 4;
   grid-row: 5 / 6;
-  
+
   width: 100%;
-  
 }
 #mensen_liste {
   align-items: center;
   margin-top: 10px;
-  
 }
 .mensen-option {
   grid-column: 1;
   grid-row: 1;
   align-items: center;
-margin-top: 5px;
-margin-left: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
   height: 30px;
   z-index: 2;
   font-weight: bold;
@@ -662,16 +653,16 @@ margin-left: 5px;
   height: 50%;
   float: left;
   filter: blur(0.5px);
-  background-color:#3E3A44 ;
+  background-color: #3e3a44;
 }
 
-.mensadetailclasse{
+.mensadetailclasse {
   width: 90%;
   margin-left: 1%;
   margin-right: 1%;
   background-color: transparent;
 }
-btn{
+btn {
   line-height: 50px;
   height: 50px;
   text-align: center;
@@ -686,7 +677,7 @@ btn{
   border: none;
   outline: none;
   color: #fff;
-  background: #3E3A44;
+  background: #3e3a44;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -694,11 +685,21 @@ btn{
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #FDA97C, #FF886B, #DE575C, #BC304C, #3E3A44, #DE575C, #FDA97C, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #fda97c,
+    #ff886b,
+    #de575c,
+    #bc304c,
+    #3e3a44,
+    #de575c,
+    #fda97c,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -706,12 +707,12 @@ btn{
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #3E3A44
+  color: #3e3a44;
 }
 
 .glow-on-hover:active:after {
@@ -724,38 +725,38 @@ btn{
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #3E3A44;
+  background: #3e3a44;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
-#background{
-  background-color:#3E3A44 ;
+#background {
+  background-color: #3e3a44;
 }
-.wenipic{
+.wenipic {
   grid-column: 1;
   grid-row: 1;
   width: 100%;
   height: 50%;
   float: left;
   filter: blur(0.5px);
-  background-color:#3E3A44 ;
+  background-color: #3e3a44;
 }
-.wilhelminenhof{
+.wilhelminenhof {
   grid-column: 1;
   grid-row: 1;
   width: 100%;
   height: 50%;
   float: left;
   filter: blur(0.5px);
-  background-color:#3E3A44 ;
+  background-color: #3e3a44;
 }
-.infostatus{
-  grid-column: 1/ col 2;
+.infostatus {
+  grid-column: 1 / col 2;
   grid-row: 1;
   width: 90%;
   float: left;
@@ -763,10 +764,11 @@ btn{
   font-size: 25px;
   margin-left: 5%;
   margin-right: 5%;
-  border-bottom: 2px solid #3E3A44;
-  background-color: #FF886B;
+  border-bottom: 2px solid #3e3a44;
+  background-color: #ff886b;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.studentenstatus{
+.studentenstatus {
   grid-column: 1;
   grid-row: 2;
   width: 100%;
@@ -776,10 +778,8 @@ btn{
   margin-left: 13%;
   margin-right: 5%;
   z-index: 3;
-  
-  
 }
-.angestellterstatus{
+.angestellterstatus {
   grid-column: 2;
   grid-row: 3;
   width: 90%;
@@ -789,7 +789,7 @@ btn{
   margin-left: 0%;
   margin-right: 5%;
 }
-.gaststatus{
+.gaststatus {
   grid-column: 2;
   grid-row: 3;
   width: 90%;
@@ -802,112 +802,109 @@ btn{
 /* ------------------------- Label ------------------
 
 */
-.studentenstyle{
+.studentenstyle {
   display: block;
   margin-right: 20px;
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
-  background-color: #FF886B;
+  background-color: #ff886b;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.angestellterstyle{
+.angestellterstyle {
   display: block;
   margin-right: 20px;
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
-  background-color: #FF886B;
-  
+  background-color: #ff886b;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.gaststyle{
+.gaststyle {
   display: block;
   margin-right: 20px;
   margin-left: 20px;
   text-align: left;
   font-size: 25px;
-  background-color: #FF886B;
-  
+  background-color: #ff886b;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
-#studentcheck{
+#studentcheck {
   float: right;
   height: 20px;
   width: 20px;
   margin-top: 1.5%;
-  }
-  #angestelltercheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-  #gastcheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-  .schweinstyle{
-    display: block;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 25px;
-    
-  }
-  #scheincheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-  .rindstyle{
-    display: block;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 25px;
-    
-  }
-  #rindcheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-  .veganstyle{
-    display: block;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 25px;
-    
-  }
-  #vagancheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-  .vegistyle{
-    display: block;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 25px;
-    
-  }
-  #vegicheck{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 1.5%;
-  }
-.logotitel{
+}
+#angestelltercheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+#gastcheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+.schweinstyle {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+#scheincheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+.rindstyle {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+#rindcheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+.veganstyle {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+#vagancheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+.vegistyle {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+#vegicheck {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 1.5%;
+}
+.logotitel {
   font-size: 40px;
   margin-left: 19%;
   display: block;
   align-items: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 5px;
   text-shadow: 2px 5px 10px rgba(129, 24, 24, 0.5);
   color: #b42a2e;
@@ -915,35 +912,93 @@ btn{
 
 #map {
   position: absolute;
-  
+
   bottom: 0;
   width: 100%;
   height: 80%;
-  
+
   z-index: -1;
 }
-.hallo{
+.hallo {
   font-size: 72px;
 }
 .marker {
-  background-image: url(images/location_on-black-18dp.svg) ;
+  background-image: url(images/location_on-black-18dp.svg);
   background-size: cover;
   background-color: #fda97c;
-  
+
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
 }
-.standortbestimmen{
+.standortbestimmen {
   margin-top: 100px;
 }
 .markerhome {
   background-size: cover;
-  background-color: #3E3A44;
+  background-color: #3e3a44;
   opacity: 0.5;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.datenschutz {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
+  color: #313131;
+}
+.datenschutheader {
+  font-size: 29px;
+}
+.wrapperdatenschutz {
+  color: #313131;
+}
+ul {
+  width: 70%;
+}
+.impressumtabel {
+  float: left;
+  background-color: #ff886b;
+}
+.impresusm {
+  margin-top: 20%;
+  background-color: #ff886b;
+}
+
+#liststyle {
+  margin-top: 15%;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+  width: 200px;
+}
+.liststyle:last-child {
+  border: none;
+}
+.liststyle :hover {
+  font-size: 30px;
+  background: black;
+}
+#Bildstudierendenwerk{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30%;
+  height: 90%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.klickeninfo{
+  margin-left: 5%;
+}
+.geolocation{
+  width: 100%;
 }

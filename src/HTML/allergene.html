@@ -1,8 +1,9 @@
 <!--
-  In dieser HTML Seite wird die Status Webseite gebaut, 
+  In dieser HTML Seite wird die Allergene Webseite gebaut, 
   wobei die Inhalte jeweils aufgeteilt sind (s. Beschreibung).
-  Auf dieser Seite wird per Klick festgelegt ob du Student oder Mitarbeiter bist
+  Führte alle auswählbaren Allergene auf
 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,14 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>HellsMensen-Status</title>
+    <title>HellsMensen-Alergene</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="mensa.css" />
   </head>
-  <body>
+  <body> 
 
     <!-- Menü Oben-->
 
@@ -25,9 +26,7 @@
       <div class="mdc-top-navigation">
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
-            <span class="mdc-top-navigation-list-item-title"
-              >Lieblingsgerichte
-            </span>
+            <span class="mdc-top-navigation-list-item-title">Allergene </span>
             <span class="logooben">
               <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
             </span>
@@ -38,27 +37,28 @@
 
     <!-- Inhalt-->
     
-    <div class="wrapperMensa">
-
-      <div class="mensengid1"></div>
-      <div class="infostatus">Welchen Status hast du?</div>
-      <div class="mensengid2">
-      <label class="studentenstyle">
-        Student<input type="checkbox" id="studentcheck" />
-      </label>
-    </div>
-      <div class="mensengrid3">
-        <label class="angestellterstyle">
-          Angestellter
-          <input type="checkbox" id="angestelltercheck" />
-        </label>
-      </div>
-      <div class="mensengridprofil">
-        <label class="gaststyle">Gast
-          <input type="checkbox" id="gastcheck" />
-        </label>
-      </div>
-    </div>
+    <div class="wrapperdatenschutz
+    ">
+        <div class="allergene">  
+            <h3>Allergene</h3>
+            <ul id="liststyle">
+                <li class="allergenestyle">A Glutenhaltiges Getreide</li>
+                <li class="allergenestyle">B Krebstiere und Krebserzeugnisse</li>
+                <li class="allergenestyle">C Eier und Eiererzeugnisse</li>
+                <li class="allergenestyle">D Fisch und Fischerzeugnisse</li>
+                <li class="allergenestyle">E Erdnüsse und Erdnusserzeugnisse</li>
+                <li class="allergenestyle">F Soja und Sojaerzeugnisse</li>
+                <li class="allergenestyle">G Milch und Milcherzeugnisse</li>
+                <li class="allergenestyle">H Schalenfrüchte</li>
+                <li class="allergenestyle">I Sellerie und Sellerieerzeugnisse</li>
+                <li class="allergenestyle">J Senf und Senferzeugnisse</li>
+                <li class="allergenestyle">K Sesamsamen und Sesamerzeugnisse </li>
+                <li class="allergenestyle">L Schwefeloxid und Sulfide</li>
+                <li class="allergenestyle">M Lupinen und Lupinenerzeugnisse </li>
+                <li class="allergenestyle">N Weichtiere(Mollusken)</li>
+            </ul>
+</div>
+</div>
 
     <!-- Menü Unten-->
 
@@ -106,6 +106,5 @@
         </nav>
       </div>
     </div>
-    <script src="profil.js"></script>
   </body>
 </html>

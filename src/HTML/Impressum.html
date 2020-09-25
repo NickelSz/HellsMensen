@@ -1,7 +1,7 @@
 <!--
-  In dieser HTML Seite wird die Status Webseite gebaut, 
+  In dieser HTML Seite wird die Impressum Webseite gebaut, 
   wobei die Inhalte jeweils aufgeteilt sind (s. Beschreibung).
-  Auf dieser Seite wird per Klick festgelegt ob du Student oder Mitarbeiter bist
+  
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>HellsMensen-Status</title>
+    <title>HellsMensen-Impressum</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -25,9 +25,7 @@
       <div class="mdc-top-navigation">
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
-            <span class="mdc-top-navigation-list-item-title"
-              >Lieblingsgerichte
-            </span>
+            <span class="mdc-top-navigation-list-item-title">Impressum </span>
             <span class="logooben">
               <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
             </span>
@@ -37,29 +35,37 @@
     </div>
 
     <!-- Inhalt-->
+
+    <div class="wrapperdatenschutz">
+      <div class="impresusm">
+        <table>
+          <tr class="impressumtabel">
+            <th>HellsMensen Gesellschaft mit beschränkter Haftung</th>
+
+            <th>Wilhelminenhofstraße 20</th>
+            <th>D-12569 Berlin</th>
+
+            <th>Vertretungsberechtige Geschäftsführerin: Lauri Pechbrenner</th>
+
+            <th>Telefon: 123/123456</th>
+            <th>Fax: 123/123457</th>
+
+            <th>EMail: info@hellsmensen.de</th>
+            <th></th>
+            <th>Registergericht: Amtsgericht Berlin</th>
+            <th>Registernummer: HRB 12345</th>
+
+            <th>
+              Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE 123456789
+            </th>
+            <th>
+              Inhaltlich Verantwortliche: Lauri Pechbrenner(Anschrift s.o.)
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
     
-    <div class="wrapperMensa">
-
-      <div class="mensengid1"></div>
-      <div class="infostatus">Welchen Status hast du?</div>
-      <div class="mensengid2">
-      <label class="studentenstyle">
-        Student<input type="checkbox" id="studentcheck" />
-      </label>
-    </div>
-      <div class="mensengrid3">
-        <label class="angestellterstyle">
-          Angestellter
-          <input type="checkbox" id="angestelltercheck" />
-        </label>
-      </div>
-      <div class="mensengridprofil">
-        <label class="gaststyle">Gast
-          <input type="checkbox" id="gastcheck" />
-        </label>
-      </div>
-    </div>
-
     <!-- Menü Unten-->
 
     <div class="bottom-nav">
@@ -106,6 +112,5 @@
         </nav>
       </div>
     </div>
-    <script src="profil.js"></script>
   </body>
 </html>

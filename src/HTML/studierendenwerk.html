@@ -1,8 +1,9 @@
 <!--
-  In dieser HTML Seite wird die Status Webseite gebaut, 
+  In dieser HTML Seite wird die Studienwerk Webseite gebaut, 
   wobei die Inhalte jeweils aufgeteilt sind (s. Beschreibung).
-  Auf dieser Seite wird per Klick festgelegt ob du Student oder Mitarbeiter bist
+  Verlinkung zur Studienwerkseite eingebaut zur Info
 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>HellsMensen-Status</title>
+    <title>HellsMensen-Studierendenwerk</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -26,7 +27,7 @@
         <nav class="mdc-top-navigation-list-less">
           <span class="mdc-top-navigation-list-item-title-container">
             <span class="mdc-top-navigation-list-item-title"
-              >Lieblingsgerichte
+              >Studierenden Werk
             </span>
             <span class="logooben">
               <img src="images/HellsLogo_Groß.png" alt="" id="logo" />
@@ -37,27 +38,13 @@
     </div>
 
     <!-- Inhalt-->
-    
-    <div class="wrapperMensa">
 
-      <div class="mensengid1"></div>
-      <div class="infostatus">Welchen Status hast du?</div>
-      <div class="mensengid2">
-      <label class="studentenstyle">
-        Student<input type="checkbox" id="studentcheck" />
-      </label>
-    </div>
-      <div class="mensengrid3">
-        <label class="angestellterstyle">
-          Angestellter
-          <input type="checkbox" id="angestelltercheck" />
-        </label>
-      </div>
-      <div class="mensengridprofil">
-        <label class="gaststyle">Gast
-          <input type="checkbox" id="gastcheck" />
-        </label>
-      </div>
+    <div class="wrapperdatenschutz">
+        <a href="https://www.stw.berlin/">
+        <img src="https://www.jobs-studentenwerke.de/sites/default/files/styles/logo_studentenwerk/public/user-files/bra/logos/logo_studierendenwerk_berlin.png?itok=vHgHEZo7" alt="" id="Bildstudierendenwerk">
+        <div class="klickeninfo" >
+            Auf das Bild klicken und mehr erfahren!
+        </div></a>
     </div>
 
     <!-- Menü Unten-->
@@ -106,6 +93,5 @@
         </nav>
       </div>
     </div>
-    <script src="profil.js"></script>
   </body>
 </html>
